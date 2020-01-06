@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/date"
+        android:textColor="#000"
+        android:text="@string/date"/>
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="yyyy-mm-dd"
+        android:inputType="date"
+        android:autofillHints="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/time"
+        android:textColor="#000"
+        android:text="@string/time"/>
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:ems="10"
+        android:hint="hh:mm"
+        android:inputType="time"
+        android:autofillHints="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/distance"
+        android:textColor="#000"
+        android:text="@string/distance"/>
+
+
+    <EditText
+        android:id="@+id/distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/in_km_non_negative_decimal"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/ave_speed"
+        android:textColor="#000"
+        android:text="Average Speed"/>
+    <EditText
+        android:id="@+id/ave_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/km_h_non_negative_decimal"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/ave_cadence"
+        android:textColor="#000"
+        android:text="@string/average_cadence"/>
+    <EditText
+        android:id="@+id/ave_cadence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/non_negative_integer"
+        android:inputType="number"
+        android:autofillHints="" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/comment"
+        android:textColor="#000"
+        android:text="@string/comment"/>
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="20"
+        android:hint="Up to 20 characters"
+        android:inputType="text" />
+
+</LinearLayout>
